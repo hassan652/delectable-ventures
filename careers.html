@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Careers — Delectable Ventures</title>
+  <meta name="description" content="Careers at Delectable Ventures: open positions and how to apply." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scrollProgress"></div></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Go to home">
+        <div class="logo" aria-hidden="true">
+          <img class="logo-mark" src="assets/logo.jpg" alt="" aria-hidden="true" />
+        </div>
+        <span class="brand-name">Delectable Ventures</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#work">Projects &amp; Clients</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="careers.html" aria-current="page">Careers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <label class="theme-switch" for="themeSwitch" title="Toggle color theme">
+              <input id="themeSwitch" type="checkbox" role="switch" aria-label="Toggle color theme" />
+              <span class="switch">
+                <span class="thumb" aria-hidden="true"></span>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero reveal about-hero" id="hero">
+    <div class="bg-art" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="kicker">Join the Team</div>
+        <h1 class="display"><span class="text-gradient">Build With Us.</span></h1>
+        <p class="lead">We’re always interested in meeting people who care about quality, ownership, and building with integrity.</p>
+        <div class="pills">
+          <span class="pill">Engineering & Delivery</span>
+          <span class="pill">Design & Interiors</span>
+          <span class="pill">Operations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="section reveal" id="open-positions">
+      <div class="container">
+        <header class="section-head">
+          <h2>Open Positions</h2>
+          <p>Current openings at Delectable Ventures.</p>
+        </header>
+
+        <div class="glass-card">
+          <p style="margin: 0; color: var(--color-muted);">No open roles at the moment. Please check back soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section reveal" id="apply">
+      <div class="container">
+        <div class="cta-card glass-card gradient-border">
+          <div class="cta-content">
+            <div class="cta-kicker">How to Apply</div>
+            <h2 style="margin: .3rem 0 .4rem;">Email your CV</h2>
+            <p style="margin: 0; color: var(--color-muted);">Send your CV/resume and a short note about the role you’re interested in to <a href="mailto:careers@delectableventures.com">careers@delectableventures.com</a>.</p>
+          </div>
+          <div class="cta-action">
+            <a class="btn btn-primary" href="mailto:careers@delectableventures.com?subject=Application%20%E2%80%94%20Delectable%20Ventures">Email Careers</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand" aria-label="Go to home">
+        <div class="logo small" aria-hidden="true">
+          <img class="logo-mark" src="assets/logo.jpg" alt="" aria-hidden="true" />
+        </div>
+        <span class="brand-name">Delectable Ventures</span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#work">Projects &amp; Clients</a>
+        <a href="about.html">About Us</a>
+        <a href="careers.html" aria-current="page">Careers</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <small>© <span id="year"></span> Delectable Ventures. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,16 +17,18 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="Go to home">
-        <div class="logo" aria-hidden="true">DV</div>
+        <div class="logo" aria-hidden="true">
+          <img class="logo-mark" src="assets/logo.jpg" alt="" aria-hidden="true" />
+        </div>
         <span class="brand-name">Delectable Ventures</span>
       </a>
       <nav class="nav" aria-label="Primary">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
         <ul id="nav-list" class="nav-list">
           <li><a href="#services">Services</a></li>
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#work">Current Projects</a></li>
+          <li><a href="#work">Projects &amp; Clients</a></li>
           <li><a href="about.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
             <label class="theme-switch" for="themeSwitch" title="Toggle color theme">
@@ -148,17 +150,50 @@
           </article>
         </div>
 
-        <div class="glass-card" style="margin-top:1.2rem">
-          <h3>Core Competence</h3>
-          <p>From steel and pre-engineered buildings to bespoke fitouts:</p>
-          <ul class="checklist">
-            <li>Steel & Pre-Engineered Buildings</li>
-            <li>Shopping Malls, Cash & Carry, Multiplex Cinemas</li>
-            <li>Petrol & CNG Stations, Hotels</li>
-            <li>Kids Soft Plays</li>
-            <li>Drywall & Modular Construction</li>
-            <li>AV & Home Automation</li>
-          </ul>
+        <div class="core-competence-card">
+          <div class="competence-header">
+            <div class="competence-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h3>Core Competence</h3>
+              <p class="competence-tagline">From steel and pre-engineered buildings to bespoke fitouts</p>
+            </div>
+          </div>
+          <div class="competence-grid">
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>Steel & Pre-Engineered Buildings</span>
+            </div>
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>Shopping Malls & Cash & Carry</span>
+            </div>
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>Multiplex Cinemas</span>
+            </div>
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>Petrol & CNG Stations</span>
+            </div>
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>Hotels & Hospitality</span>
+            </div>
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>Kids Soft Plays</span>
+            </div>
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>Drywall & Modular Construction</span>
+            </div>
+            <div class="competence-item">
+              <span class="competence-dot"></span>
+              <span>AV & Home Automation</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -170,8 +205,8 @@
     <section class="work section reveal" id="work">
       <div class="container">
         <header class="section-head">
-          <h2>Current Projects</h2>
-          <p>Selected builds across sectors.</p>
+          <h2>Projects &amp; Clients</h2>
+          <p>Selected builds across sectors — and the partners we serve.</p>
         </header>
         <div class="filters" role="tablist" aria-label="Project filters">
           <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
@@ -214,6 +249,22 @@
             <div class="tags"><span class="tag">Office</span><span class="tag">Fitout</span></div>
           </article>
         </div>
+
+        <div class="clients-merged reveal" id="clients">
+          <header class="section-head">
+            <h3>Clients &amp; Partners</h3>
+            <p>Proud collaborations across industries.</p>
+          </header>
+          <div class="chips" aria-label="Client brands list">
+            <span class="chip">Kartarpur Corridor</span>
+            <span class="chip">Dewan Foods</span>
+            <span class="chip">QRS</span>
+            <span class="chip">National Technology Group</span>
+            <span class="chip">AS Footwear</span>
+            <span class="chip">Cinepax</span>
+            <span class="chip">Shell Petroleum</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -226,24 +277,6 @@
         <p id="modalDesc"></p>
       </div>
     </div>
-
-    <section class="clients section alt reveal" id="clients">
-      <div class="container">
-        <header class="section-head">
-          <h2>Clients & Partners</h2>
-          <p>Proud collaborations across industries.</p>
-        </header>
-        <div class="chips" aria-label="Client brands list">
-          <span class="chip">Kartarpur Corridor</span>
-          <span class="chip">Dewan Foods</span>
-          <span class="chip">QRS</span>
-          <span class="chip">National Technology Group</span>
-          <span class="chip">AS Footwear</span>
-          <span class="chip">Cinepax</span>
-          <span class="chip">Shell Petroleum</span>
-        </div>
-      </div>
-    </section>
 
     <section class="cta section" id="contact">
       <div class="container">
@@ -292,7 +325,7 @@
           </div>
           <div class="actions">
             <a class="btn btn-primary" href="mailto:info@delectableventures.com">Email Us</a>
-            <a class="btn btn-secondary" href="tel:+923234727610">Call Now</a>
+            <a class="btn btn-ghost" href="tel:+923234727610">Call Now</a>
             <a class="btn btn-ghost" href="https://maps.google.com/?q=Office+P-90,+Paradise+Floor,+Siddiq+Trade+Center,+Gulberg,+Lahore" target="_blank" rel="noopener">Get Directions</a>
           </div>
           <small class="trustline">Registered with FBR & PRA</small>
@@ -304,14 +337,16 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <a href="index.html" class="brand" aria-label="Go to home">
-        <div class="logo small" aria-hidden="true">DV</div>
+        <div class="logo small" aria-hidden="true">
+          <img class="logo-mark" src="assets/logo.jpg" alt="" aria-hidden="true" />
+        </div>
         <span class="brand-name">Delectable Ventures</span>
       </a>
       <nav class="footer-nav" aria-label="Footer">
         <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#work">Current Projects</a>
+        <a href="#work">Projects &amp; Clients</a>
         <a href="about.html">About Us</a>
+        <a href="careers.html">Careers</a>
         <a href="#contact">Contact</a>
       </nav>
       <small>© <span id="year"></span> Delectable Ventures. All rights reserved.</small>

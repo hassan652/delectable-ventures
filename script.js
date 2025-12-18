@@ -2,7 +2,8 @@
 (function () {
   // Theme: apply saved or system preference
   const applyTheme = (t) => {
-    const theme = (t === 'light' || t === 'dark') ? t : 'dark';
+    const current = document.documentElement.getAttribute('data-theme');
+    const theme = (t === 'light' || t === 'dark') ? t : ((current === 'light' || current === 'dark') ? current : 'light');
     document.documentElement.setAttribute('data-theme', theme);
     const btn = document.querySelector('.theme-toggle');
     if (btn) btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
@@ -15,8 +16,7 @@
   const getPreferredTheme = () => {
     const saved = localStorage.getItem('theme');
     if (saved === 'light' || saved === 'dark') return saved;
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return prefersDark ? 'dark' : 'light';
+    return 'light';
   };
   applyTheme(getPreferredTheme());
   const themeBtn = document.querySelector('.theme-toggle');
